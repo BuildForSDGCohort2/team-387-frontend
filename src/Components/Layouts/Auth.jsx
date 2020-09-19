@@ -43,7 +43,7 @@ ElevationHomeScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function Home({ window, children }) {
+export default function Auth({ window, children }) {
   const classes = useStyles();
   return (
     <>
@@ -66,7 +66,11 @@ export default function Home({ window, children }) {
   );
 }
 
-Home.propTypes = {
-  window: PropTypes.func.isRequired,
+Auth.propTypes = {
+  window: PropTypes.func,
   children: PropTypes.node.isRequired,
+};
+
+Auth.defaultProps = {
+  window: undefined,
 };
