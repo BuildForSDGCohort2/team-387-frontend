@@ -1,12 +1,21 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cf370ef9ca81487cb2d9530413c4587d)](https://www.codacy.com/gh/BuildForSDGCohort2/team-387-frontend?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=BuildForSDGCohort2/team-387-frontend&amp;utm_campaign=Badge_Grade)
+
+[![Build Status](https://travis-ci.org/BuildForSDGCohort2/team-387-frontend.svg?branch=master)](https://travis-ci.org/BuildForSDGCohort2/team-387-frontend)
+
+[![Coverage Status](https://coveralls.io/repos/github/BuildForSDGCohort2/team-387-frontend/badge.svg?branch=master)](https://coveralls.io/github/BuildForSDGCohort2/team-387-frontend?branch=master)
+
 # team-387-frontend
-Frontend for Cliquepay, a lightweight money transfer app for Facebook users
+Frontend web client for Cliquepay, a lightweight money transfer app for Facebook users
 
 ## Features
- - Users can signup or sign in to the app with their Facebook accounts
- - Users can view available balances of wallets associated with their account
- - Users can create a new wallet
- - Users can view the transaction history of a specific wallet of theirs
- - Users can send or receive funds using a wallet of theirs
+ - Users can navigate the app to signup or sign in to the app with their Facebook accounts
+ - Users can can navigate the app to view available balances of wallets associated with their account
+ - Users can can navigate the app to create a new wallet
+ - Users can can navigate the app to view the transaction history of a specific wallet of theirs
+ - Users can can navigate the app to send or receive funds using a wallet of theirs
+
+ ## STACK
+ REACTJS, MATERIAL-UI
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
