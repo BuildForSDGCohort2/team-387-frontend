@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import './App.css';
 import Home from './Components/Containers/Home';
 
 function AppTest() {
   return (
-    <div className="App">
+    <div>
       <Switch>
         <Route path="/">
           <Home />
