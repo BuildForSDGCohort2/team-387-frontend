@@ -7,4 +7,4 @@ cache:
 before_script:
 - npm ci --if-present
 script:
-- npm run coverage --if-present
+- npm run coverage:ci --if-present
