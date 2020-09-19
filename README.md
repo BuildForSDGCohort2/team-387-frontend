@@ -15,7 +15,7 @@ Frontend web client for Cliquepay, a lightweight money transfer app for Facebook
  - Users can can navigate the app to send or receive funds using a wallet of theirs
 
  ## STACK
- REACT, MATERIAL-UI
+ REACTJS, MATERIAL-UI
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
