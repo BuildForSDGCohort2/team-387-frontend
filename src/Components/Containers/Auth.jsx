@@ -1,11 +1,9 @@
 import React from 'react';
 
-import Home from '../Layouts/Home';
+import Auth from '../Layouts/Auth';
 
 export default function () {
   return (
-    <>
-      <Home />
-    </>
+    <Auth />
   );
 }
