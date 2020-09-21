@@ -112,8 +112,8 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item xs={12} className={`${useCss.setBackground} ${classes.homeBackdrop3}`}>
-          <Grid container className={classes.gridHeight} alignItems="center">
-            <Grid item xs={12}>
+          <Grid container className={classes.gridHeight} justify="center" alignItems="center">
+            <Grid item xs={4}>
               <Paper className={classes.descriptionPaper}>
                 <Typography align="center" variant="h5">Pricing ? ... its FREE!!!</Typography>
               </Paper>
