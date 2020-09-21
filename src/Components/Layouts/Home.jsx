@@ -59,7 +59,7 @@ export default function Home() {
   const useCss = css();
 
   return (
-    <User path="/auth" btnTxt="Get Started">
+    <User path="/auth" linkTxt="Get Started">
       <Grid container>
         <Grid item xs={12} className={`${useCss.setBackground} ${classes.homeBackdrop2}`}>
           <Grid className={classes.gridHeight} alignItems="center" container>

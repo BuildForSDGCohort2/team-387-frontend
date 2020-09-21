@@ -8,10 +8,10 @@ const { AppTest } = AppContainer;
 
 test('renders learn react link', () => {
   const { getByText } = render(
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter initialEntries={['/auth']}>
       <AppTest />
     </MemoryRouter>,
   );
-  const testElement = getByText(/Welcome to CliquePay/i);
+  const testElement = getByText(/Login to get started/i);
   expect(testElement).toBeInTheDocument();
 });

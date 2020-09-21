@@ -7,11 +7,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
-import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import Hidden from '@material-ui/core/Hidden';
 import PaymentIcon from '@material-ui/icons/PaymentOutlined';
 import { makeStyles } from '@material-ui/core/styles';
-import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles(({ spacing, breakpoints, palette }) => ({
   headerIcon: {
@@ -53,14 +52,9 @@ ElevationHomeScroll.propTypes = {
 };
 
 export default function Auth({
-  window, children, path, btnTxt,
+  window, children, path, linkTxt,
 }) {
   const classes = useStyles();
-  const history = useHistory();
-
-  const handleGetStartedClick = () => {
-    history.push(path);
-  };
 
   return (
     <>
@@ -74,7 +68,7 @@ export default function Auth({
             <Hidden xsDown>
               <Typography className={classes.title} variant="h6">CliquePay</Typography>
             </Hidden>
-            <Button color="inherit" onClick={handleGetStartedClick}>{btnTxt}</Button>
+            <Link color="inherit" href={path}>{linkTxt}</Link>
           </Toolbar>
         </AppBar>
       </ElevationHomeScroll>
@@ -92,11 +86,11 @@ Auth.propTypes = {
   window: PropTypes.func,
   children: PropTypes.node.isRequired,
   path: PropTypes.string,
-  btnTxt: PropTypes.string,
+  linkTxt: PropTypes.string,
 };
 
 Auth.defaultProps = {
   window: undefined,
   path: '',
-  btnTxt: '',
+  linkTxt: '',
 };
