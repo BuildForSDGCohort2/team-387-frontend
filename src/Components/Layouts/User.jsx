@@ -13,7 +13,7 @@ import PaymentIcon from '@material-ui/icons/PaymentOutlined';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 
-const useStyles = makeStyles(({ spacing, breakpoints }) => ({
+const useStyles = makeStyles(({ spacing, breakpoints, palette }) => ({
   headerIcon: {
     marginRight: spacing(1),
     [breakpoints.down('xs')]: {
@@ -21,7 +21,7 @@ const useStyles = makeStyles(({ spacing, breakpoints }) => ({
     },
   },
   header: {
-    backgroundColor: '#00BFA6',
+    backgroundColor: palette.appTheme.main,
   },
   title: {
     flexGrow: 1,
