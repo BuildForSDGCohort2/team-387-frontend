@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Home from '../Layouts/Home';
+import User from './User';
 
 export default function () {
   return (
-    <>
-      <Home />
-    </>
+    <User>
+      <p>Here</p>
+    </User>
   );
 }

@@ -12,6 +12,6 @@ test('renders learn react link', () => {
       <AppTest />
     </MemoryRouter>,
   );
-  const linkElement = getByText(/Home/i);
+  const linkElement = getByText(/Welcome to CliquePay/i);
   expect(linkElement).toBeInTheDocument();
 });

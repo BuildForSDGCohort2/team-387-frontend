@@ -1,18 +1,25 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { ThemeProvider } from '@material-ui/core/styles';
 
-import './App.css';
-import Home from './Components/Containers/Home';
+import theme from './theme';
+import Home from './Components/Layouts/Home';
+import Auth from './Components/Containers/Auth';
 
 function AppTest() {
   return (
-    <div className="App">
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Switch>
+        <Route path="/auth">
+          <Auth />
+        </Route>
         <Route path="/">
           <Home />
         </Route>
       </Switch>
-    </div>
+    </ThemeProvider>
   );
 }
 

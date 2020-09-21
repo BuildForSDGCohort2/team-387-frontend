@@ -7,6 +7,9 @@
 # team-387-frontend
 Frontend web client for Cliquepay, a lightweight money transfer app for Facebook users
 
+## Live app
+https://build-for-sdg-cliquepay.netlify.app/
+
 ## Features
  - Users can navigate the app to signup or sign in to the app with their Facebook accounts
  - Users can can navigate the app to view available balances of wallets associated with their account
